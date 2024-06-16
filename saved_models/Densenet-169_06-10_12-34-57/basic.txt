@@ -1,0 +1,6 @@
+model: Densenet-169
+batch_size: 32
+epoch: 200
+learning_rate: 0.0005
+regularization: False
+weight_decay: 0.0

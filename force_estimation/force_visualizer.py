@@ -2,8 +2,8 @@ import numpy as np
 import open3d
 from open3d import *
 from math import sqrt
-import rospy
-from geometry_msgs.msg import WrenchStamped
+# import rospy
+# from geometry_msgs.msg import WrenchStamped
 
 final_force = False
 reference_frame = False
@@ -199,11 +199,11 @@ class Visualizer:
 
 if __name__ == '__main__':
     visualizer = Visualizer()
-    rospy.init_node('force_visualization')
-    predicted_force_sub = rospy.Subscriber('/predicted_wrench', WrenchStamped, visualizer.ros_callback)
+    # rospy.init_node('force_visualization')
+    # predicted_force_sub = rospy.Subscriber('/predicted_wrench', WrenchStamped, visualizer.ros_callback)
 
-    while not rospy.is_shutdown():
-        if not visualizer.vis.poll_events():
-            break
-        else:
-            visualizer.update_force(visualizer.wrench)
+    # while not rospy.is_shutdown():
+    #     if not visualizer.vis.poll_events():
+    #         break
+    #     else:
+    #         visualizer.update_force(visualizer.wrench)
