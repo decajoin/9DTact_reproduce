@@ -12,5 +12,5 @@ setup(
     author='Changyi Lin',
     author_email='changyil@andrew.cmu.edu',
     description='Open source of 9DTact.',
-    install_requires=required,
+    # install_requires=required,
 )
